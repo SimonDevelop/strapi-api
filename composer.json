@@ -1,0 +1,58 @@
+{
+    "name": "simondevelop/strapi-api",
+    "description": "Librairie facilitant l'utilisation de l'API strapi",
+    "type": "library",
+    "keywords": [
+        "strapi",
+        "api",
+        "auth",
+        "collection",
+        "single"
+    ],
+    "homepage": "https://github.com/SimonDevelop/strapi-api",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "SimonDevelop",
+            "email": "contact@simon-micheneau.fr"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "SimonDevelop\\Strapi\\": "src/",
+            "SimonDevelop\\Strapi\\Test\\": "tests/"
+        }
+    },
+    "require": {
+        "ext-json": "*",
+        "php": "^7.4 || ^8.0",
+        "guzzlehttp/guzzle": "^7.4"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.6",
+        "phpunit/phpunit": "^9.5",
+        "phpstan/phpstan": "^1.5"
+    },
+    "scripts": {
+    "phpcs": "phpcs -s",
+    "phpstan-src": "phpstan analyse -l 5 src",
+    "phpstan-tests": "phpstan analyse -l 5 tests",
+    "phpstan": [
+        "@phpstan-src",
+        "@phpstan-tests"
+    ],
+    "phpunit": "XDEBUG_MODE=coverage vendor/bin/phpunit --colors --do-not-cache-result --coverage-clover=coverage.xml",
+    "phpunit-dev": "XDEBUG_MODE=coverage vendor/bin/phpunit --colors --do-not-cache-result --coverage-html ./coverage",
+    "test": [
+        "@phpcs",
+        "@phpstan",
+        "@phpunit"
+    ],
+    "test-dev": [
+      "@phpcs",
+      "@phpstan",
+      "@phpunit-dev"
+    ]
+  }
+}

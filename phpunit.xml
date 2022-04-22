@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<phpunit colors="true"
+  bootstrap="./vendor/autoload.php"
+  backupGlobals="false"
+  stopOnError="false"
+  stopOnFailure="false"
+  stopOnIncomplete="false"
+  stopOnSkipped="false"
+  stopOnRisky="false">
+    <coverage processUncoveredFiles="true">
+      <include>
+        <directory suffix=".php">src</directory>
+      </include>
+    </coverage>
+    <testsuite name="tests">
+        <directory>./tests</directory>
+    </testsuite>
+</phpunit>
