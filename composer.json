@@ -1,6 +1,6 @@
 {
     "name": "simondevelop/strapi-api",
-    "description": "Librairie facilitant l'utilisation de l'API strapi",
+    "description": "PHP library allowing you to use the Strapi API via various functions to facilitate requests.",
     "type": "library",
     "keywords": [
         "strapi",

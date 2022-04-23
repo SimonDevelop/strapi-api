@@ -87,8 +87,8 @@ class AuthTest extends TestCase
     public function testAuthenticationErrorUrl($setup): void
     {
         $auth = new Auth($setup);
-        $this->assertEquals(
-            'Connection refused for URI ' . $setup->getUrl() . Auth::AUTH_URL,
+        $this->assertStringContainsString(
+            $setup->getUrl() . Auth::AUTH_URL,
             $auth->authentication('simondevelop', 'password')
         );
     }
@@ -148,8 +148,8 @@ class AuthTest extends TestCase
     public function testRegisterErrorUrl($setup): void
     {
         $auth = new Auth($setup);
-        $this->assertEquals(
-            'Connection refused for URI ' . $setup->getUrl() . Auth::REGISTER_URL,
+        $this->assertStringContainsString(
+            $setup->getUrl() . Auth::REGISTER_URL,
             $auth->register('simondevelop', 'contact@simon-micheneau.fr', 'password')
         );
     }
@@ -195,8 +195,8 @@ class AuthTest extends TestCase
     public function testForgotPasswordErrorUrl($setup): void
     {
         $auth = new Auth($setup);
-        $this->assertEquals(
-            'Connection refused for URI ' . $setup->getUrl() . Auth::FORGOT_PASSWORD_URL,
+        $this->assertStringContainsString(
+            $setup->getUrl() . Auth::FORGOT_PASSWORD_URL,
             $auth->forgotPassword('contact@simon-micheneau.fr')
         );
     }
@@ -271,8 +271,8 @@ class AuthTest extends TestCase
     public function testResetPasswordErrorUrl($setup): void
     {
         $auth = new Auth($setup);
-        $this->assertEquals(
-            'Connection refused for URI ' . $setup->getUrl() . Auth::RESET_PASSWORD_URL,
+        $this->assertStringContainsString(
+            $setup->getUrl() . Auth::RESET_PASSWORD_URL,
             $auth->resetPassword('code', 'newPassword', 'newPassword')
         );
     }
@@ -318,8 +318,8 @@ class AuthTest extends TestCase
     public function testSendEmailConfirmationErrorUrl($setup): void
     {
         $auth = new Auth($setup);
-        $this->assertEquals(
-            'Connection refused for URI ' . $setup->getUrl() . Auth::SEND_CONFIRMATION_URL,
+        $this->assertStringContainsString(
+            $setup->getUrl() . Auth::SEND_CONFIRMATION_URL,
             $auth->sendEmailConfirmation('contact@simon-micheneau.fr')
         );
     }
