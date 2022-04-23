@@ -8,7 +8,7 @@
 Librairie php vous permettant d'utiliser l'API de [Strapi](https://strapi.io/) via diverses fonctions pour facilité les requêtes.
 
 ## TODO
-- [ ] Authentification
+- [ ] User system
 - [ ] Collection types
 - [ ] Single types
 - [ ] Upload
