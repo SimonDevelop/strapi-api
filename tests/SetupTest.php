@@ -19,10 +19,12 @@ class SetupTest extends TestCase
      */
     public function testInitConstructor(): Setup
     {
-        $Setup = new Setup('https://strapi.subdomain.com/api');
-        $this->assertEquals('https://strapi.subdomain.com/api', $Setup->getUrl());
-        $this->assertEquals(null, $Setup->getToken());
-        return $Setup;
+        $setup = new Setup('https://strapi.subdomain.com/api');
+
+        $this->assertEquals('https://strapi.subdomain.com/api', $setup->getUrl());
+        $this->assertEquals(null, $setup->getToken());
+
+        return $setup;
     }
 
     /**
@@ -40,10 +42,10 @@ class SetupTest extends TestCase
      * @depends testInitConstructor
      * @covers ::setUrl
      */
-    public function testSetInvalidUrl($Setup): void
+    public function testSetInvalidUrl($setup): void
     {
         $this->expectException(\InvalidArgumentException::class);
-        $Setup->setUrl('');
+        $setup->setUrl('');
     }
 
     /**
@@ -51,10 +53,10 @@ class SetupTest extends TestCase
      * @depends testInitConstructor
      * @covers ::setUrl
      */
-    public function testSetValidUrl($Setup): void
+    public function testSetValidUrl($setup): void
     {
-        $Setup->setUrl('https://strapi.subdomain.fr/api');
-        $this->assertEquals('https://strapi.subdomain.fr/api', $Setup->getUrl());
+        $setup->setUrl('https://strapi.subdomain.fr/api');
+        $this->assertEquals('https://strapi.subdomain.fr/api', $setup->getUrl());
     }
 
     /**
@@ -62,9 +64,9 @@ class SetupTest extends TestCase
      * @depends testInitConstructor
      * @covers ::setToken
      */
-    public function testSetToken($Setup): void
+    public function testSetToken($setup): void
     {
-        $Setup->setToken('test');
-        $this->assertEquals('test', $Setup->getToken());
+        $setup->setToken('test');
+        $this->assertEquals('test', $setup->getToken());
     }
 }

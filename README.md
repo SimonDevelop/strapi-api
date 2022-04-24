@@ -1,17 +1,19 @@
-[![version](https://img.shields.io/badge/Version-0.0.0-brightgreen.svg)](https://github.com/SimonDevelop/strapi-api/releases/tag/0.0.0)
+[![version](https://img.shields.io/badge/Version-0.1.0-brightgreen.svg)](https://github.com/SimonDevelop/strapi-api/releases/tag/0.1.0)
 [![Minimum PHP Version](https://img.shields.io/badge/php-%3E%3D%207.4-8892BF.svg)](https://php.net/)
 [![Github Actions PHP](https://github.com/SimonDevelop/strapi-api/workflows/PHP/badge.svg)](https://github.com/SimonDevelop/strapi-api/actions)
 [![codecov](https://codecov.io/gh/SimonDevelop/strapi-api/branch/master/graph/badge.svg?token=D30AKR07T2)](https://codecov.io/gh/SimonDevelop/strapi-api)
 [![GitHub license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/SimonDevelop/strapi-api/blob/master/LICENSE)
 
 # strapi-api
-Librairie php vous permettant d'utiliser l'API de [Strapi](https://strapi.io/) via diverses fonctions pour facilité les requêtes.
+PHP library allowing you to use the [Strapi](https://strapi.io/) API via various functions to facilitate requests.
 
 ## TODO
-- [ ] Authentification
+- [x] User system (without external provider)
 - [ ] Collection types
 - [ ] Single types
 - [ ] Upload
+
+Check this [docs](https://github.com/SimonDevelop/strapi-api/blob/master/docs) for more.
 
 #### Go to contribute !
 - Check the [Code of Conduct](https://github.com/SimonDevelop/strapi-api/blob/master/.github/CODE_OF_CONDUCT.md)
