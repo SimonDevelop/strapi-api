@@ -16,10 +16,6 @@ use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
 use GuzzleHttp\Exception\ConnectException;
 
-/**
- * Class Auth
- * Authentication, register and more function.
- */
 class Auth
 {
     /**
@@ -50,19 +46,19 @@ class Auth
     /**
      * @var Setup
      */
-    private $setup;
+    private Setup $setup;
 
     /**
      * @var Client
      */
-    private $client;
+    private Client $client;
 
     /**
      * @param Setup $setup
      */
     public function __construct(Setup $setup)
     {
-        $this->setup = $setup;
+        $this->setup  = $setup;
         $this->client = new Client();
     }
 
@@ -175,8 +171,8 @@ class Auth
             // @codeCoverageIgnoreStart
             $response = $this->client->request('POST', $this->setup->getUrl() . self::RESET_PASSWORD_URL, [
                 'json' => [
-                    'code' => $code,
-                    'password' => $newPassword,
+                    'code'                 => $code,
+                    'password'             => $newPassword,
                     'passwordConfirmation' => $newPasswordConfirm
                 ]
             ]);
