@@ -1,4 +1,4 @@
-[![version](https://img.shields.io/badge/Version-0.1.0-brightgreen.svg)](https://github.com/SimonDevelop/strapi-api/releases/tag/0.1.0)
+[![version](https://img.shields.io/badge/Version-0.2.0-brightgreen.svg)](https://github.com/SimonDevelop/strapi-api/releases/tag/0.2.0)
 [![Minimum PHP Version](https://img.shields.io/badge/php-%3E%3D%207.4-8892BF.svg)](https://php.net/)
 [![Github Actions PHP](https://github.com/SimonDevelop/strapi-api/workflows/PHP/badge.svg)](https://github.com/SimonDevelop/strapi-api/actions)
 [![codecov](https://codecov.io/gh/SimonDevelop/strapi-api/branch/master/graph/badge.svg?token=D30AKR07T2)](https://codecov.io/gh/SimonDevelop/strapi-api)
