@@ -9,8 +9,17 @@ PHP library allowing you to use the [Strapi](https://strapi.io/) API via various
 
 ## TODO
 - [x] User system (without external provider)
-- [ ] Collection types
-- [ ] Single types
+- Collection types
+  - [x] Get
+  - [x] Get Id
+  - [ ] Post
+  - [ ] Put
+  - [ ] Delete
+- Single types
+  - [x] Get
+  - [ ] Put
+  - [ ] Delete
+  - [ ] Post
 - [ ] Upload
 
 Check this [docs](https://github.com/SimonDevelop/strapi-api/blob/master/docs) for more.

@@ -11,10 +11,6 @@
 
 namespace SimonDevelop\Strapi;
 
-/**
- * Class Setup
- * Configure your setup strapi api.
- */
 class Setup
 {
     /**
